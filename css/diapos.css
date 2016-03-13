@@ -1,0 +1,13 @@
+/************
+ * Citation *
+ ************/
+blockquote small {
+    width: 100%;
+    text-align: right;
+}
+.reveal section img {
+    border: 1px solid #FFF;
+}
+.reveal section .noborder {
+    border: none;
+}

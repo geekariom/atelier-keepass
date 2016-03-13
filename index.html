@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les mots de passe</title>
+    
+    <meta name="description" content="Présentation de KeePass">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/theme/black.css">
+    <link rel="stylesheet" type="text/css" href="css/diapos.css">
+
+    <!-- Imprimante et PDF -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section id="index">
+                <h1>Les mots de passe</h1>
+                <h5>Utilisation d'un gestionnaire de mot de passe</h5>
+            </section>
+            <section id="mdp">
+                <section>
+                    <h3>Qu'est ce qu'un bon mot de passe</h3>
+                </section>
+                <section>
+                    <h3>Personnel et secret</h3>
+                    <ul>
+                        <li class="fragment">Un mot de passe que plusieurs personnes connaissent n'est pas un mot de passe</li>
+                        <li class="fragment">Ne faites confiance à personne</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Complexe</h3>
+                    <ul>
+                        <li class="fragment">Introuvable en ingénierie social</li>
+                        <li class="fragment">Long (minimum 8 caractères)</li>
+                        <li class="fragment">Utilisez des caractères spéciaux</li>
+                        <li class="fragment">Alternez la casse (majuscule/minuscule)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Unique</h3>
+                    <ul>
+                        <li>Isole les services</li>
+                        <li>Évite les risques de fuite</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Non figé</h3>
+                    <ul>
+                        <li>Renouvellez régulièrement vos mots de passe</li>
+                        <li>Encore plus fréquemment pour un environment pro</li>
+                        <li>Ne reprennez jamais un ancien mot de passe</li>
+                    </ul>
+                    <aside class="notes">
+                        Recommandation ANSSI : 90 jours
+                    </aside>
+                </section>
+                <section>
+                    <h3>Testez vos mots de passe</h3>
+                    <a href="https://howsecureismypassword.net/" target="_blank">HowSecureIsMyPassword.net</a>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Résumé</h3>
+                    <div class="fragment">
+                        Il faut un mot de passe :<br>
+                        <span class="fragment">personnel</span><span class="fragment">, complexe</span><span class="fragment">, unique</span>
+                        <span class="fragment"> et le modifier régulièrement</span>
+                    </div>
+                    <img src="images/mdp.gif" class="noborder" style="width: 110%;">
+                </section>
+                <section>
+                    <h3>Comment les retenir ?</h3>
+                    <ul>
+                        <li class="fragment strike">Les noter sur un carnet</li>
+                        <li class="fragment strike">Les enregistrer dans le navigateur</li>
+                    </ul>
+                    <div class="fragment">
+                        <br>
+                        <strong class="fragment highlight-red">Utiliser un gestionnaire de mot de passe</strong>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h3>Les gestionnaires<br>de mot de passe</h3>
+                <ul class="fragment">
+                    <li class="fragment strike shrink">LastPass</li>
+                    <li class="fragment strike shrink">1Password</li>
+                    <li class="fragment grow highlight-red">KeePass</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>LastPass : proprio et américain</li>
+                        <li>1Password : proprio</li>
+                        <li>KeePass : libre, gratuit, multi O.S</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <section>
+                    <h3>KeePass</h3>
+                    <ul>
+                        <li><a href="http://keepass.info/download.html">keepass.info</a></li>
+                        <li>Version portable ?</li>
+                        <li>En français ?</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Création d'une base de donnée</h3>
+                    <img src="images/creer-bdd.png">
+                </section>
+                <section>
+                    <h3>L'interface</h3>
+                    <img src="images/interface.png">
+                </section>
+                <section>
+                    <h3>Ajouter une entrée</h3>
+                    <img src="images/addkey.png">
+                </section>
+                <section>
+                    <h3>Le générateur</h3>
+                    <img src="images/generator.png">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Les extensions</h3>
+                    <ul>
+                        <li class="fragment">Pour Firefox : <strong>Passifox</strong></li>
+                        <li class="fragment">Pour Chrome : <strong>chromelPass</strong></li>
+                        <li class="fragment">KeePassHttp ?</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h3>Questions ?</h3>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
+        });
+    </script>
+</body>
+</html>
